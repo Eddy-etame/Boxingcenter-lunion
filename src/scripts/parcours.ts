@@ -38,7 +38,7 @@ export const LIBELLE_DISCIPLINE: Record<PageDiscipline, string> = {
   mma: 'MMA & grappling',
   'kick-boxing': 'Kick-boxing',
   'boxe-enfants': 'Boxe enfants',
-  'boxing-fitness': 'Boxing fitness',
+  'preparation-physique': 'Préparation physique',
 };
 
 /** La même discipline ne s'écrit pas pareil dans un titre et dans une phrase. */
@@ -47,7 +47,7 @@ const DANS_UNE_PHRASE: Record<PageDiscipline, string> = {
   mma: 'du MMA',
   'kick-boxing': 'du kick-boxing',
   'boxe-enfants': 'un cours de boxe pour mon enfant',
-  'boxing-fitness': 'du boxing fitness',
+  'preparation-physique': 'de la préparation physique',
 };
 
 export const LIBELLE_CRENEAU: Record<Creneau, string> = {
@@ -126,7 +126,7 @@ export function seance(p: Parcours): Seance | null {
   const quand = CRENEAU_PHRASE[p.creneau];
   const pourquoi =
     p.creneau === 'soir'
-      ? `C’est le moment le plus fréquenté, et le plus vivant : ${quand}, il y a du monde à qui se mesurer. Le club ferme à 21h30.`
+      ? `C’est le moment le plus fréquenté, et le plus vivant : ${quand}, il y a du monde à qui se mesurer. Le planning du club donne l’heure exacte de chaque cours.`
       : p.creneau === 'midi'
         ? `${LIBELLE_CRENEAU.midi} est le créneau le plus calme du club — la meilleure façon de débuter sans public.`
         : p.creneau === 'samedi'
