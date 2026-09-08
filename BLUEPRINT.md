@@ -24,7 +24,7 @@ Accès au club : L'Union → avenue des États-Unis par le périphérique nord (
 
 ## Pages
 Accueil · /boxe-anglaise/ · /mma/ (cage officielle, grappling, JJB — le cluster le plus fort du site) · /boxe-thai/ (Muay Thaï et kick boxing sont publiés : le cluster « boxe thaï » est légitime ici) · /boxe-enfants/ (dès 3 ans, MMA jeunes 10-16) · /premiere-seance/ (séance d'essai 10 € : sourcée) · /ta-seance/ · /saint-jean/ · /rouffiac-tolosan/ · /contact/ · /merci/ · légales · 404.
-Option forte : /preparation-physique/ (Hyrox, cross-training, muscu) — l'offre existe et « salle de sport » est un cluster à part ; à trancher.
+**/preparation-physique/ — oui (Eddy, 2026-09-08)** : Hyrox, cross-training, musculation & cardio, Street Workout sont publiés par le club ; la page porte « salle de sport L'Union », « cross training L'Union », « Hyrox L'Union », « préparation physique L'Union ».
 Nav : Plannings ↗ `clubmma.fr/planning/` · Tarifs ↗ `clubmma.fr/abonnements/`.
 
 ## Mots-clés
@@ -32,8 +32,8 @@ Nav : Plannings ↗ `clubmma.fr/planning/` · Tarifs ↗ `clubmma.fr/abonnements
 
 ## Images — décision Eddy 2026-09-08 : pas de séance photo, légendes en phase avec le site
 Le dossier est vide et le stock États-Unis n'a que des flyers et du 768×512 (vignettes, plannings). Le site se construit avec les photos du réseau : **Portet (lot Muret/Cugnaux non utilisé)**, hero ≥ 2 000 px, jamais les mêmes que l'autre site vers États-Unis. Légendes selon la loi commune §8 : ce qu'on voit + « Boxing Center », sans nommer une autre salle, sans prétendre au lieu. Les deux plannings du stock sont des données réelles à réutiliser en texte.
-Nommage : `club-boxe-lunion-boxing-center-01.jpg`, `salle-mma-lunion-cage-boxing-center-02.jpg`, `boxe-thai-lunion-boxing-center-03.jpg`…
+Nommage : `<sujet>-lunion.webp` — `ring-de-boxe-lunion.webp`, `cage-mma-lunion.webp`, `boxe-thai-lunion.webp`… (loi commune §8, décision Eddy).
 
 ## Système visuel — sous-famille États-Unis : os · encre · accent bronze clair (distinct du bronze du club lui-même, à mesurer) ; le motif « 1 200 m² / trois espaces » peut devenir la grammaire du hero (trois plans).
 ## Concurrence : « club de boxe L'Union », « MMA L'Union », « boxe thaï L'Union », « dojo L'Union » + Saint-Jean, Rouffiac.
-## Bloquants : amplitude horaire réelle d'États-Unis · accès bus précis · page préparation physique oui/non.
+## Bloquants : amplitude horaire réelle d'États-Unis · accès bus précis · —.
