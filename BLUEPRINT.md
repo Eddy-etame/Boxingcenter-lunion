@@ -1,6 +1,6 @@
 # Boxing Center — depuis L'Union · brief de site
 
-Loi commune : `../BLUEPRINT-SATELLITES-BOXING-CENTER.md`. Motifs : `../seo-keywords-satellites.json`.
+Loi commune : `./BLUEPRINT-FAMILLE.md` (copie de `../BLUEPRINT-SATELLITES-BOXING-CENTER.md`). Motifs : `./seo-keywords-satellites.json`.
 Domaine `www.boxingcenter-lunion.fr` · dépôt `https://github.com/Eddy-etame/Boxingcenter-lunion.git`.
 
 ## Destination — une seule
@@ -34,6 +34,6 @@ Nav : Plannings ↗ `clubmma.fr/planning/` · Tarifs ↗ `clubmma.fr/abonnements
 Le dossier est vide et le stock États-Unis n'a que des flyers et du 768×512 (vignettes, plannings). Le site se construit avec les photos du réseau : **Portet (lot Muret/Cugnaux non utilisé)**, hero ≥ 2 000 px, jamais les mêmes que l'autre site vers États-Unis. Légendes selon la loi commune §8 : ce qu'on voit + « Boxing Center », sans nommer une autre salle, sans prétendre au lieu. Les deux plannings du stock sont des données réelles à réutiliser en texte.
 Nommage : `<sujet>-lunion.webp` — `ring-de-boxe-lunion.webp`, `cage-mma-lunion.webp`, `boxe-thai-lunion.webp`… (loi commune §8, décision Eddy).
 
-## Système visuel — sous-famille États-Unis : os · encre · accent bronze clair (distinct du bronze du club lui-même, à mesurer) ; le motif « 1 200 m² / trois espaces » peut devenir la grammaire du hero (trois plans).
+## Système visuel — sous-famille États-Unis : os · encre · accent **bronze** — texte `#7d5a1e` (5,6:1 sur `#f4f1ea`, mesuré), aplats `#c9a45a` (distinct du bronze du club lui-même ; loi commune §7) ; le motif « 1 200 m² / trois espaces » peut devenir la grammaire du hero (trois plans).
 ## Concurrence : « club de boxe L'Union », « MMA L'Union », « boxe thaï L'Union », « dojo L'Union » + Saint-Jean, Rouffiac.
 ## Bloquants : amplitude horaire réelle d'États-Unis · accès bus précis · —.
