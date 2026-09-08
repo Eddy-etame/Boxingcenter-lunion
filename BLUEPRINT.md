@@ -30,10 +30,10 @@ Nav : Plannings ↗ `clubmma.fr/planning/` · Tarifs ↗ `clubmma.fr/abonnements
 ## Mots-clés
 9 motifs × {L'Union, Saint-Jean, Rouffiac-Tolosan} (attention à l'apostrophe : « L'Union » et « L’Union » — écrire les deux formes dans le corps, une seule en title). Secondaires : 31240, Unionais, nord-est toulousain, Linéo L9, Croix-Daurade, plus grande salle de sports de combat, cage MMA officielle, Hyrox, Muay Thaï, boxe thaï L'Union.
 
-## Images — BLOQUANT
-Le dossier est vide. Le stock `output_imgs/etats_unis` ne contient que 2 plannings (données réelles, utiles), 2 gants adidas (produit — à ne pas utiliser), 4 salles en 768×512 (dont une seule d'États-Unis ? — les noms disent Ramonville, Minimes, Portet, Saint-Cyprien) et 2 flyers d'ouverture. **Aucune photo hero d'États-Unis.** Options : (a) séance photo à États-Unis — la seule réponse à la barre pour « la plus grande salle de France » ; (b) en attendant, les non-utilisées de Colomiers (Minimes) et du lot Muret/Cugnaux (Portet), légendées avec leur vraie salle, en disant « photos du réseau » ; (c) les visuels du flyer d'ouverture pour la section « 6e salle » uniquement.
+## Images — décision Eddy 2026-09-08 : pas de séance photo, légendes en phase avec le site
+Le dossier est vide et le stock États-Unis n'a que des flyers et du 768×512 (vignettes, plannings). Le site se construit avec les photos du réseau : **Portet (lot Muret/Cugnaux non utilisé)**, hero ≥ 2 000 px, jamais les mêmes que l'autre site vers États-Unis. Légendes selon la loi commune §8 : ce qu'on voit + « Boxing Center », sans nommer une autre salle, sans prétendre au lieu. Les deux plannings du stock sont des données réelles à réutiliser en texte.
 Nommage : `club-boxe-lunion-boxing-center-01.jpg`, `salle-mma-lunion-cage-boxing-center-02.jpg`, `boxe-thai-lunion-boxing-center-03.jpg`…
 
 ## Système visuel — sous-famille États-Unis : os · encre · accent bronze clair (distinct du bronze du club lui-même, à mesurer) ; le motif « 1 200 m² / trois espaces » peut devenir la grammaire du hero (trois plans).
 ## Concurrence : « club de boxe L'Union », « MMA L'Union », « boxe thaï L'Union », « dojo L'Union » + Saint-Jean, Rouffiac.
-## Bloquants : photos hero · amplitude horaire réelle d'États-Unis · accès bus précis · page préparation physique oui/non.
+## Bloquants : amplitude horaire réelle d'États-Unis · accès bus précis · page préparation physique oui/non.
