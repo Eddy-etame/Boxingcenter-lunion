@@ -4,7 +4,7 @@ Loi commune : `../BLUEPRINT-SATELLITES-BOXING-CENTER.md`. Motifs : `../seo-keywo
 Domaine `www.boxingcenter-lunion.fr` · dépôt `https://github.com/Eddy-etame/Boxingcenter-lunion.git`.
 
 ## Destination — une seule
-**Boxing Center Toulouse États-Unis** · 388 avenue des États-Unis, 31200 Toulouse · 05 62 24 46 82 · boxingcenter31@gmail.com · rocade sortie 33b Lalande · **ouvert 6 j/7** (amplitude d'entraînement à confirmer ; le site n'affiche que les horaires du comptoir lun–ven 12h–14h / 17h–20h30 — ne pas publier ceux-là comme amplitude).
+**Boxing Center Toulouse États-Unis** · 388 avenue des États-Unis, 31200 Toulouse · 05 62 24 46 82 · boxingcenter31@gmail.com · rocade sortie 33b Lalande · **ouvert 6 jours sur 7** (formule à publier) ; le site n'affiche que les horaires du comptoir (lun–ven 12h–14h / 17h–20h30) — ne jamais les publier comme amplitude d'entraînement ; renvoyer au planning du club.
 URLs : `https://clubmma.fr/` · `/disciplines/` · **`/planning/`** · **`/abonnements/`** (= tarifs) · `/contact/`. Attention : chemins différents des autres clubs.
 Faits (site, 2026-09-08) : **1 200 m², trois espaces de 400 m², cage MMA officielle surélevée, deux rings de compétition, tatamis, 16 sacs, cage de callisthénie** ; « la plus grande salle de sports de combat de France » ; « 6e salle », ouverte le 25 août (flyer). Coachs : Renaud Chavaudra (pieds-poings), Zouhir Boumenir (grappling & JJB).
 Offre réelle : Boxe anglaise · Kick boxing & Muay Thaï · MMA, grappling & JJB · Musculation & cardio · Cross-training · Hyrox · Lady Punch · Street Workout · Cours enfants dès 3 ans · MMA jeunes 10-16 ans.
