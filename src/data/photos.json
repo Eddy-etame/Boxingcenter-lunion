@@ -1,0 +1,68 @@
+{
+  "club-boxe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAA0APxFysVAsJqSisAgBgCIJZwDG9CG0rifx8+gP/rAA/naPU6VTrn2Fc/VsX+TF3CeK49H7SRbZrGTmVJGRAAA=",
+    "w": 5257,
+    "h": 3509,
+    "ratio": 1.4981
+  },
+  "ring-de-boxe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABwAwCdASoUAA0APxFysVAsJqSisAgBgCIJQBbZBDpCYCuXSIAA/bRAAI9U+lAEsTXQNFrT6c7PUOuFMQIJ1hrwOTHbvIgA",
+    "w": 6016,
+    "h": 4016,
+    "ratio": 1.498
+  },
+  "sparring-boxe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAwCdASoUAA0APxFyslAsJqSisAgBgCIJZwDImCHPToNuxOGgPAAA/r79jNipdlYxoSA1xXKP4lsU2YJfNQ3R41OAAA==",
+    "w": 6016,
+    "h": 4016,
+    "ratio": 1.498
+  },
+  "boxe-anglaise-lunion": {
+    "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBQCdASoUAB4APxF6tVOsJ6UiqAqpgCIJZQDDrDSzN2ZZlkAm2sfgEwfvOVrsIjlAAP5+Al5XwNye7AEIX+i+Tb42v40EVe9faANmsuF3necd524o3zjzwaT7Lf8SZ+1ZFTdnaKQJ9yipK8wudmAAAAA=",
+    "w": 4016,
+    "h": 6016,
+    "ratio": 0.6676
+  },
+  "premiere-seance-lunion": {
+    "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBQCdASoUAB4APxF0rlCsJqQisAgBgCIJZwDLpCHuJZDCyDI63J+bHlv4u6cXOkMoAADhs57m+tZoKkYSdRfTYKs5vY7sDeKIQNDGAFWCkA/a1RowrOjNpdetHUOKA8QEM19Y/e3GjMlO9dYYbXkMzQAAAA==",
+    "w": 4016,
+    "h": 6016,
+    "ratio": 0.6676
+  },
+  "sac-de-frappe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASoUAB4APxFyr1CsJqQisAgBgCIJYwDBkB2elob+eCMLhrQVYHUcoAAA/ieAhcmnqSsQ9E+TwuKmml1gOwvdI1tRDWeI7vTbgAmkxDawh6qB5Lik1ggPFds3ufM74iTCZEzs3e2ovN38C7d/e/5FAAAA",
+    "w": 2607,
+    "h": 3905,
+    "ratio": 0.6676
+  },
+  "preparation-physique-lunion": {
+    "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoUAA0APxF4tFGsJyUisAgBgCIJZwAAWeJf4VAQb5XaOYAA/RK2oAtZxRwy70bPvpjySonqwBWqQQr8EXhkGS6PvRIAAA==",
+    "w": 6016,
+    "h": 4016,
+    "ratio": 1.498
+  },
+  "entrainement-boxe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwBACdASoUAB4APxF0s1MsJiSisBgIAYAiCWUAzjgxMPnrXImFXYkw5QuQ1rtBEyAA+xPbCV8qtqkLbWVtRdkSBtkaN04pv4Ul7Cu4z6hMTkMG8UxJa0grJhocrbHjeoGVaMUAAAA=",
+    "w": 3443,
+    "h": 5158,
+    "ratio": 0.6675
+  },
+  "travail-au-corps-lunion": {
+    "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoUAA0APxF0slCsJqSisAgBgCIJZwAAWlpDmuQ97XQoAAD+qXdtndxmyL6Tpko/X5U3aWoaOGk4iqDDpkbtenX4XLwAAA==",
+    "w": 6016,
+    "h": 4016,
+    "ratio": 1.498
+  },
+  "encadrement-boxe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAwCdASoUAA0APxFyslAsJqSisAgBgCIJaQAAUf4WAKLY8SAA/jqXAld9GTEDOFyelcn/d+dQAhpDVJqK4MoQAAA=",
+    "w": 6016,
+    "h": 4016,
+    "ratio": 1.498
+  },
+  "materiel-boxe-lunion": {
+    "lqip": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABwAwCdASoUAA0APxF2sVAsJ6SisAgBgCIJaQAAW4L73C7gCiAA/ujIoGIVA9FgiwcJqgz3iHeOiUgKAAA=",
+    "w": 6016,
+    "h": 4016,
+    "ratio": 1.498
+  }
+}

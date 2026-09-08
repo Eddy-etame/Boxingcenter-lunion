@@ -1,0 +1,44 @@
+---
+/**
+ * TRANSPORTS EN COMMUN — le trajet complet, de L'Union au 388 avenue des
+ * États-Unis.
+ *
+ * Le corps vit dans `components/Transports.astro`, piloté par
+ * `data/transports.ts`.
+ */
+import Base from '../layouts/Base.astro';
+import Transports from '../components/Transports.astro';
+import { SITE } from '../data/verite';
+
+const QUESTIONS = [
+  {
+    titre: `Comment aller au club depuis ${SITE.ville} sans voiture ?`,
+    texte:
+      'La 40 relie L’Union Malbou à Borderouge, terminus du métro B. Deux stations plus loin, La Vache : la 59 y démarre et parcourt toute l’avenue des États-Unis. Descends à « États-Unis Fondeyre », le club est au 388.',
+  },
+  {
+    titre: 'Quel bus passe devant le club ?',
+    texte:
+      'La 59. C’est la ligne qui parcourt l’avenue des États-Unis sur toute sa longueur, depuis La Vache jusqu’au nord. Son arrêt « États-Unis Fondeyre » est dans le quartier du club.',
+  },
+  {
+    titre: 'Et en voiture ?',
+    texte:
+      'Par le périphérique, sortie 33b « Lalande ». C’est l’accès que le club indique lui-même, et c’est direct depuis L’Union.',
+  },
+  {
+    titre: 'Je pars de Saint-Jean.',
+    texte:
+      'La 73 relie Saint-Jean Lestang à Borderouge tous les jours. Ensuite, c’est la même suite : métro B jusqu’à La Vache, puis la 59.',
+  },
+  {
+    titre: 'Les horaires sont où ?',
+    texte:
+      'Chez Tisséo, qui les publie et les met à jour à chaque saison. Chaque étape de cette page ouvre la fiche officielle de sa ligne.',
+  },
+];
+---
+
+<Base page="transports" faq={QUESTIONS}>
+  <Transports />
+</Base>
