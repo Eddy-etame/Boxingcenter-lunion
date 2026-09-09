@@ -161,7 +161,7 @@ const QUESTIONS = [
       </div>
       <div class="premiere__texte">
         <p class="cartouche"><span class="cartouche__num">06</span><span>La première fois</span></p>
-        <h2 id="t-premiere">Personne n’est arrivé en sachant boxer.</h2>
+        <h2 id="t-premiere">Tout le monde a commencé par une première séance.</h2>
         <ol class="premiere__etapes">
           <li>
             <span class="mono">01</span>
@@ -169,15 +169,15 @@ const QUESTIONS = [
           </li>
           <li>
             <span class="mono">02</span>
-            <p><strong>Tu ne combats pas.</strong> Une première séance, c’est de la corde, un geste décomposé, du sac et des pattes d’ours.</p>
+            <p><strong>Tu frappes, et c’est tout.</strong> Une première séance, c’est de la corde, un geste décomposé, du sac et des pattes d’ours.</p>
           </li>
           <li>
             <span class="mono">03</span>
-            <p><strong>Personne ne te regarde.</strong> Tout le monde a été débutant, et chacun est occupé à sa propre séance.</p>
+            <p><strong>Chacun est occupé à sa propre séance.</strong> Le coach te suit, le reste de la salle a la tête dans son travail.</p>
           </li>
           <li>
             <span class="mono">04</span>
-            <p><strong>Tu repars courbaturé, pas humilié.</strong> C’est le seul objectif d’une première séance.</p>
+            <p><strong>Tu repars essoufflé, et content d’être venu.</strong> C’est le seul objectif d’une première séance.</p>
           </li>
         </ol>
         <a class="lien premiere__lien" href={route('premiere-seance').chemin}>
@@ -239,13 +239,17 @@ const QUESTIONS = [
         </div>
       </div>
 
+      {/* Une ligne par itinéraire : la première étape peut être la même pour
+          les trajets, alors c'est le trajet entier qu'on nomme. */}
       <ol class="trajet__lignes">
         {ITINERAIRES.map((it, i) => (
           <li class="reveler" style={`--retard:${i * 80}ms`}>
             <a href={`${route('transports').chemin}?trajet=${it.id}`}>
               <span class={`trajet__code trajet__code--${it.etapes[0].mode}`}>{it.etapes[0].code}</span>
-              <span class="trajet__parcours">{it.etapes[0].de} → {it.etapes[0].a}</span>
-              <span class="mono trajet__jours">{it.etapes[0].jours}</span>
+              <span class="trajet__parcours">{it.onglet}</span>
+              <span class="mono trajet__jours">
+                {it.etapes.length === 1 ? 'direct' : `${it.etapes.length} étapes`} · {it.etapes[0].jours}
+              </span>
             </a>
           </li>
         ))}
@@ -284,13 +288,13 @@ const QUESTIONS = [
       <p class="cartouche"><span class="cartouche__num">10</span><span>Le secteur</span></p>
       <div class="secteur__tete">
         <h2 id="t-secteur">
-          {SITE.ville}, {SITE.codePostal},<br />
-          <span class="secteur__accent">et ce qu’il y a autour.</span>
+          Tu habites une commune à côté&nbsp;?<br />
+          <span class="secteur__accent">On a prévu ça aussi.</span>
         </h2>
         <p class="lead faible secteur__intro">
-          {VILLE.population.valeur.replace(' (2023)', '')}, dans Toulouse
-          Métropole. Deux communes du secteur ont leur propre page ici, parce que
-          le trajet n’y commence pas au même endroit.
+          Saint-Jean et Rouffiac-Tolosan ont chacune sa page&nbsp;: la ligne à
+          prendre, la route en voiture, et l’arrêt où descendre. Parce que depuis
+          chez toi, le trajet commence ailleurs.
         </p>
       </div>
 
@@ -300,8 +304,12 @@ const QUESTIONS = [
             <a class="carte" href={`/${c.id}/`}>
               <span class="mono carte__cp">{c.codePostal}</span>
               <span class="carte__nom">{c.nom}</span>
-              <span class="carte__note">{c.cotes[0].valeur}</span>
-              <span class="mono carte__aller">Y aller depuis {c.nom} <span aria-hidden="true">→</span></span>
+              <span class="carte__trajet">
+                <span class="mono carte__ligne">{c.cotes[0].valeur}</span>
+                <span aria-hidden="true">→</span>
+                <span class="carte__club">{DESTINATION.nomCourt}</span>
+              </span>
+              <span class="mono carte__aller">Le trajet depuis {c.nom} <span aria-hidden="true">→</span></span>
             </a>
           </li>
         ))}
@@ -584,6 +592,24 @@ const QUESTIONS = [
     letter-spacing: -0.015em;
   }
   .carte__note { font-size: var(--t-petit); color: var(--texte-faible); }
+  .carte__trajet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45em;
+    font-size: var(--t-petit);
+    color: var(--texte-faible);
+  }
+  .carte__ligne {
+    padding: 0.12rem 0.45rem;
+    border-radius: 0.25rem;
+    background: var(--encre);
+    color: var(--papier-vif);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .carte__club { font-weight: 600; color: var(--encre); }
   .carte__aller { margin-top: var(--e-3); color: var(--signal-texte); text-transform: none; letter-spacing: 0.04em; }
 
   .secteur__cle { color: var(--graphite); margin-bottom: var(--e-3); }
