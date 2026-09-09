@@ -50,7 +50,7 @@ export const CONTENUS: readonly Contenu[] = [
       {
         titre: 'Deux rings de compétition',
         texte:
-          'L’espace boxe fait 400 m², avec deux rings et du tapis d’entraînement autour. Deux rings, ça veut dire qu’on n’attend pas son tour : le cours avance, et le groupe compétiteurs amateurs peut travailler en même temps que les autres.',
+          'L’espace boxe fait 400 m², avec deux rings et du tapis d’entraînement autour. Deux rings, ça veut dire qu’on n’attend pas son tour : le cours avance, et un groupe travaille au ring pendant que le reste de la salle enchaîne aux sacs.',
       },
       {
         titre: 'Comment tu y vas',
@@ -82,21 +82,26 @@ export const CONTENUS: readonly Contenu[] = [
           'Le club publie trois plannings hebdomadaires : Boxe, Fitness, et MMA & Sol. C’est là que se trouvent les jours et les heures de chaque cours, et c’est la seule source à jour.',
       },
       {
-        titre: 'C’est quoi le groupe compétiteurs ?',
+        titre: 'Il y a une école de boxe pour les enfants ?',
         texte:
-          'Un créneau publié pour les compétiteurs amateurs, qui préparent les combats. On n’y va que si on le décide : ce n’est jamais un passage obligé.',
+          'Oui : trois groupes, 3/6, 7/11 et 12/16 ans, au planning de la salle Boxe, et un créneau MMA jeunes 10/16 ans dans la salle MMA.',
       },
     ],
   },
   {
     id: 'mma',
-    h1: 'Grappling et travail au sol à proximité de L’Union',
+    h1: 'Club MMA et grappling à proximité de L’Union',
     chapeau:
-      'Le travail au sol, c’est le contrôle, les projections et les soumissions — sans aucune frappe. Depuis L’Union, il se pratique avenue des États-Unis, sur 400 m² de tatamis, avec une cage surélevée officielle et des panneaux de séparation pour travailler le cage control.',
+      'Le MMA combine le combat debout, les projections et le travail au sol. Depuis L’Union, il s’entraîne avenue des États-Unis, dans une cage officielle et sur 400 m² de tatamis, avec le grappling et le jiu-jitsu brésilien à côté, et un créneau MMA jeunes 10/16 ans.',
     photoHero: 'travail-au-corps-lunion',
     photoSecondaire: 'sparring-boxe-lunion',
-    promesse: 'Le combat, sans l’impact — sur les plus grands tatamis du réseau.',
+    promesse: 'Le combat complet : debout, projections, sol, dans la cage officielle.',
     blocs: [
+      {
+        titre: 'Le MMA, dans la cage officielle',
+        texte:
+          'Debout avec la boxe et le Muay Thai, puis les projections, puis le sol. Les cours de MMA accueillent les débutants comme les confirmés, et un créneau MMA jeunes 10/16 ans est au planning de la salle MMA.',
+      },
       {
         titre: 'Le grappling, sans les coups',
         texte:
@@ -127,9 +132,9 @@ export const CONTENUS: readonly Contenu[] = [
     ],
     faq: [
       {
-        titre: 'Où est la salle de grappling la plus proche de L’Union ?',
+        titre: 'Où est la salle de MMA la plus proche de L’Union ?',
         texte:
-          'Au 388 avenue des États-Unis, à Toulouse. L’espace dédié fait 400 m² de tatamis, avec une cage surélevée officielle.',
+          'Au 388 avenue des États-Unis, à Toulouse : une cage officielle et 400 m² de tatamis, pour le MMA, le grappling et le jiu-jitsu brésilien.',
       },
       {
         titre: 'On peut débuter sans rien connaître ?',
@@ -150,9 +155,9 @@ export const CONTENUS: readonly Contenu[] = [
   },
   {
     id: 'kick-boxing',
-    h1: 'Boxe pieds-poings et full contact à proximité de L’Union',
+    h1: 'Club de kick-boxing et de boxe thaï à proximité de L’Union',
     chapeau:
-      'La boxe pieds-poings ajoute les jambes aux poings. Le club publie aussi le full contact, un règlement où les coups restent au-dessus de la ceinture. Les deux se pratiquent avenue des États-Unis, sur deux rings de compétition.',
+      'Le club publie le pieds-poings « Kick » au planning de la salle Boxe, le Muay Thai sur sa page des disciplines, et le full contact, nouveau dans l’espace Boxe. Les trois se pratiquent avenue des États-Unis, sur deux rings de compétition.',
     photoHero: 'sac-de-frappe-lunion',
     photoSecondaire: 'club-boxe-lunion',
     promesse: 'Ajouter les jambes, sans perdre la garde. Le travail debout le plus complet.',
@@ -202,9 +207,9 @@ export const CONTENUS: readonly Contenu[] = [
           'Pour découvrir, une tenue de sport suffit. Si tu continues, le club te dira quel matériel prendre et à quelle taille.',
       },
       {
-        titre: 'Et la boxe thaï ?',
+        titre: 'Et la boxe thaï, ou Muay Thai ?',
         texte:
-          'Cette salle publie la boxe pieds-poings et le full contact. Si tu cherches précisément le Muay Thaï, avec les coudes et les genoux, dis-le dans ton message : on te répond avec ce qui se pratique réellement dans le réseau.',
+          'Le club la publie : « Muay Thai (Boxe Thaïlandaise) », l’art des huit membres, avec les poings, les pieds, les coudes, les genoux et le clinch. Les créneaux pieds-poings sont sur le planning de la salle Boxe.',
       },
     ],
   },

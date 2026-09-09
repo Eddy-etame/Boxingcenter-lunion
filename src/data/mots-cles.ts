@@ -53,14 +53,13 @@ export const CLUSTERS: readonly Cluster[] = [
       'cours de boxe L’Union',
       'club de boxe L’Union',
       'ring de compétition',
-      'compétiteurs amateurs',
       'apprendre à boxer',
       'pattes d’ours',
     ],
   },
   {
     page: 'mma',
-    prioritaires: ['grappling', 'L’Union', 'travail au sol', 'cage'],
+    prioritaires: ['MMA', 'grappling', 'L’Union', 'cage', 'salle MMA'],
     secondaires: [
       'MMA L’Union',
       'club MMA L’Union',
@@ -73,7 +72,7 @@ export const CLUSTERS: readonly Cluster[] = [
   },
   {
     page: 'kick-boxing',
-    prioritaires: ['pieds-poings', 'L’Union', 'full contact'],
+    prioritaires: ['pieds-poings', 'L’Union', 'kick-boxing', 'Muay Thai', 'full contact'],
     secondaires: [
       'boxe pieds poings L’Union',
       'kick boxing L’Union',

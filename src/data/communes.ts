@@ -76,7 +76,7 @@ export const COMMUNES: readonly Commune[] = [
     ],
     titre: 'Club de boxe et MMA près de Saint-Jean (31240) | Boxing Center',
     description:
-      'La ligne 73 relie Saint-Jean à Borderouge, puis le métro B et la 59 mènent avenue des États-Unis. Boxing Center y réunit boxe, travail au sol et préparation physique.',
+      'La ligne 73 relie Saint-Jean à Borderouge, puis le métro B et la 59 mènent avenue des États-Unis. Boxing Center y réunit boxe, MMA, grappling et préparation physique.',
     faq: [
       {
         titre: 'Depuis Saint-Jean, comment on y va ?',
@@ -91,7 +91,7 @@ export const COMMUNES: readonly Commune[] = [
       {
         titre: 'Qu’est-ce qu’on peut y pratiquer ?',
         texte:
-          'La salle réunit toutes les disciplines du réseau : boxe anglaise et pieds-poings sur deux rings de compétition, travail au sol sur 400 m² de tatamis avec une cage surélevée, et un espace préparation physique avec seize sacs, musculation, cardio, cross-training et Hyrox.',
+          'La salle réunit toutes les disciplines du réseau : boxe anglaise et pieds-poings sur deux rings de compétition, MMA et grappling sur 400 m² de tatamis avec une cage surélevée, et un espace préparation physique avec seize sacs, musculation, cardio, cross-training et Hyrox.',
       },
       {
         titre: 'Mon enfant peut s’inscrire ?',
@@ -144,7 +144,7 @@ export const COMMUNES: readonly Commune[] = [
       {
         titre: 'Qu’est-ce qu’il y a dans la salle ?',
         texte:
-          'Trois espaces de 400 m² : le striking et le travail au sol avec une cage surélevée officielle, la boxe avec deux rings de compétition, et la préparation physique avec seize sacs de frappe, musculation, cardio et cross-training.',
+          'Trois espaces de 400 m² : le MMA et le grappling avec une cage surélevée officielle, la boxe avec deux rings de compétition, et la préparation physique avec seize sacs de frappe, musculation, cardio et cross-training.',
       },
       {
         titre: 'Je n’ai jamais boxé.',

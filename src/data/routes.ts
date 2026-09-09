@@ -50,7 +50,7 @@ export const ROUTES: readonly Route[] = [
     question: 'Où boxer quand on habite L’Union ?',
     titre: 'Club de boxe et MMA près de L’Union | Boxing Center',
     description:
-      'Boxe, travail au sol et sports de combat à proximité de L’Union : Boxing Center accueille les Unionais avenue des États-Unis, sur 1 200 m² et trois espaces.',
+      'Boxe, MMA, grappling et sports de combat à proximité de L’Union : Boxing Center accueille les Unionais avenue des États-Unis, sur 1 200 m² et trois espaces.',
     menu: true,
     index: true,
   },
@@ -61,7 +61,7 @@ export const ROUTES: readonly Route[] = [
     question: 'À quoi ressemble un cours de boxe anglaise, et est-ce que je peux commencer ?',
     titre: 'Boxe anglaise près de L’Union | Boxing Center',
     description:
-      'Cours de boxe anglaise accessibles depuis L’Union, sur deux rings de compétition. Aucun niveau demandé, et un groupe compétiteurs amateurs.',
+      'Cours de boxe anglaise accessibles depuis L’Union, sur deux rings de compétition. Aucun niveau demandé, et une école de boxe pour les enfants dès 3 ans.',
     menu: true,
     index: true,
   },
@@ -69,10 +69,10 @@ export const ROUTES: readonly Route[] = [
     id: 'mma',
     chemin: '/mma/',
     nav: 'Travail au sol',
-    question: 'Où faire du grappling et du travail au sol quand on part de L’Union ?',
-    titre: 'Grappling et travail au sol près de L’Union | Boxing Center',
+    question: 'Où faire du MMA et du grappling quand on part de L’Union ?',
+    titre: 'Club MMA et grappling près de L’Union | Boxing Center',
     description:
-      'Le travail au sol se pratique sur 400 m² de tatamis, avec une cage surélevée officielle et des panneaux de séparation pour le cage control. À proximité de L’Union.',
+      'Salle MMA près de L’Union : le MMA s’entraîne dans une cage officielle et sur 400 m² de tatamis, avec le grappling et le jiu-jitsu brésilien.',
     menu: true,
     index: true,
   },
@@ -81,9 +81,9 @@ export const ROUTES: readonly Route[] = [
     chemin: '/kick-boxing/',
     nav: 'Pieds-poings',
     question: 'Je veux frapper avec les jambes aussi. Où ?',
-    titre: 'Boxe pieds-poings et full contact près de L’Union | Boxing Center',
+    titre: 'Club de kick-boxing et boxe thaï près de L’Union | Boxing Center',
     description:
-      'Boxe pieds-poings et full contact, sur deux rings de compétition et 400 m² de tapis. Accessible depuis L’Union par le périphérique, sortie 33b Lalande.',
+      'Pieds-poings, Muay Thai et full contact, sur deux rings de compétition et 400 m² de tapis. Accessible depuis L’Union par le périphérique, sortie 33b Lalande.',
     menu: true,
     index: true,
   },
@@ -150,7 +150,7 @@ export const ROUTES: readonly Route[] = [
     question: 'Et si je pars de Saint-Jean ?',
     titre: 'Club de boxe et MMA près de Saint-Jean (31240) | Boxing Center',
     description:
-      'La ligne 73 relie Saint-Jean à Borderouge, puis le métro B et la 59 mènent avenue des États-Unis. Boxing Center y réunit boxe, travail au sol et prépa physique.',
+      'La ligne 73 relie Saint-Jean à Borderouge, puis le métro B et la 59 mènent avenue des États-Unis. Boxing Center y réunit boxe, MMA, grappling et prépa physique.',
     menu: false,
     index: true,
     commune: true,
