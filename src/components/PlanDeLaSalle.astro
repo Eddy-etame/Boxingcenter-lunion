@@ -1,0 +1,273 @@
+---
+/**
+ * LE PLAN DE LA SALLE — le dessin du club, sous le titre qu'il illustre.
+ *
+ * Ce club a un fait que personne d'autre n'a dans le réseau : 1 200 m² en
+ * trois espaces de 400 m². Le dessin est donc le plan de la salle — trois
+ * carrés côte à côte, avec ce qu'il y a dedans : la cage et les tatamis, les
+ * deux rings, les seize sacs. En bas, l'avenue, l'entrée au 388, et l'arrêt
+ * de la 59.
+ *
+ * Il vit dans la section « La salle », sous le titre qui dit les trois
+ * espaces — dans le héros, il coûtait presque un écran avant le premier mot
+ * sur le club. Sur téléphone, le tracé vertical tient en un demi-écran.
+ *
+ * Chaque nombre vient du registre : les rings, les sacs, la surface d'un
+ * espace, le numéro dans l'avenue, le code de la ligne. Tout est en SVG
+ * inline — aucun canvas, aucune bibliothèque, aucune requête. Sans
+ * JavaScript et en mouvement réduit, le plan est déjà fini.
+ */
+import { SITE, DESTINATION } from '../data/verite';
+import { MEILLEUR } from '../data/transports';
+
+const fait = (cle: string) => DESTINATION.faits.find((f) => f.cle === cle)?.valeur ?? '';
+const nombre = (texte: string, motif: RegExp) => Number(motif.exec(texte)?.[1] ?? 0);
+/** « 2 rings, 1 cage, 16 sacs » → 2 et 16 ; « 3 zones de 400 m² » → 400 m². */
+const NB_RINGS = nombre(fait('Équipement'), /(\d+) rings?/);
+const NB_SACS = nombre(fait('Équipement'), /(\d+) sacs?/);
+const AIRE = /(\d[\d ]*m²)/.exec(fait('Espaces'))?.[1] ?? '';
+const sacs = Array.from({ length: NB_SACS }, (_, i) => i);
+const RUE = DESTINATION.adresse.split(',')[0];
+const NUMERO = RUE.split(' ')[0];
+const AVENUE = RUE.slice(NUMERO.length + 1).toUpperCase();
+const ARRET = MEILLEUR.etapes[MEILLEUR.etapes.length - 1].code;
+---
+
+<figure class="plan" data-plan>
+  <figcaption class="vh">
+    Plan de {DESTINATION.nom}, {DESTINATION.adresse} : {fait('Espaces')}. Le premier
+    réunit le MMA et le travail au sol, avec une cage surélevée officielle et {AIRE} de
+    tatamis. Le deuxième est l’espace boxe, avec {NB_RINGS} rings de compétition. Le
+    troisième est l’espace préparation physique, avec {NB_SACS} sacs de frappe, de la
+    musculation, du cardio et une cage de cross-training. L’arrêt de la {ARRET} est sur l’avenue.
+  </figcaption>
+
+  {/* ── Tracé horizontal — écrans larges ── */}
+  <svg
+    class="plan__svg plan__svg--h"
+    viewBox="0 0 1200 460"
+    role="img"
+    aria-hidden="true"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <g class="plan__espace" style="--rang:1">
+      <rect class="plan__mur" x="60" y="60" width="340" height="280" />
+      <polygon class="plan__cage" points="230,120 288,150 288,220 230,250 172,220 172,150" />
+      <text class="plan__espace-nom" x="230" y="300" text-anchor="middle">MMA &amp; SOL</text>
+      <text class="plan__espace-aire" x="230" y="322" text-anchor="middle">{AIRE} de tatamis</text>
+    </g>
+
+    <g class="plan__espace" style="--rang:2">
+      <rect class="plan__mur" x="420" y="60" width="340" height="280" />
+      <rect class="plan__ring" x="452" y="112" width="132" height="112" />
+      <rect class="plan__ring" x="600" y="112" width="132" height="112" />
+      <text class="plan__espace-nom" x="590" y="300" text-anchor="middle">BOXE</text>
+      <text class="plan__espace-aire" x="590" y="322" text-anchor="middle">{NB_RINGS} rings de compétition</text>
+    </g>
+
+    <g class="plan__espace" style="--rang:3">
+      <rect class="plan__mur" x="780" y="60" width="340" height="280" />
+      {sacs.map((i) => (
+        <circle class="plan__sac" cx={812 + (i % 8) * 40} cy={i < 8 ? 130 : 186} r="9" style={`--n:${i}`} />
+      ))}
+      <rect class="plan__rack" x="812" y="228" width="276" height="30" />
+      <text class="plan__espace-nom" x="950" y="300" text-anchor="middle">PRÉPARATION PHYSIQUE</text>
+      <text class="plan__espace-aire" x="950" y="322" text-anchor="middle">{NB_SACS} sacs de frappe</text>
+    </g>
+
+    <path class="plan__avenue" d="M 40 400 H 1160" />
+    <path class="plan__entree" d="M 590 340 V 400" />
+    <g class="plan__adresse">
+      <circle class="plan__point" cx="590" cy="400" r="8" />
+      <text class="plan__adresse-num" x="590" y="432" text-anchor="middle">{NUMERO}</text>
+    </g>
+    <text class="plan__avenue-nom" x="60" y="392" text-anchor="start">{AVENUE}</text>
+    <g class="plan__arret">
+      <rect x="880" y="392" width="16" height="16" />
+      <text class="plan__arret-nom" x="906" y="405" text-anchor="start">ARRÊT {ARRET}</text>
+    </g>
+  </svg>
+
+  {/* ── Tracé vertical — téléphones ── */}
+  <svg
+    class="plan__svg plan__svg--v"
+    viewBox="0 0 360 660"
+    role="img"
+    aria-hidden="true"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <g class="plan__espace" style="--rang:1">
+      <rect class="plan__mur" x="76" y="30" width="250" height="160" />
+      <polygon class="plan__cage" points="152,62 196,84 196,128 152,150 108,128 108,84" />
+      <text class="plan__espace-nom" x="216" y="176" text-anchor="middle">MMA &amp; SOL</text>
+    </g>
+    <g class="plan__espace" style="--rang:2">
+      <rect class="plan__mur" x="76" y="210" width="250" height="160" />
+      <rect class="plan__ring" x="100" y="238" width="90" height="76" />
+      <rect class="plan__ring" x="206" y="238" width="90" height="76" />
+      <text class="plan__espace-nom" x="222" y="356" text-anchor="middle">BOXE · {NB_RINGS} RINGS</text>
+    </g>
+    <g class="plan__espace" style="--rang:3">
+      <rect class="plan__mur" x="76" y="390" width="250" height="160" />
+      {sacs.map((i) => (
+        <circle class="plan__sac" cx={100 + (i % 8) * 28} cy={i < 8 ? 424 : 462} r="7" style={`--n:${i}`} />
+      ))}
+      <rect class="plan__rack" x="100" y="490" width="200" height="22" />
+      <text class="plan__espace-nom" x="236" y="536" text-anchor="middle">PRÉPA · {NB_SACS} SACS</text>
+    </g>
+
+    <path class="plan__avenue" d="M 26 590 H 340" />
+    <path class="plan__entree" d="M 180 550 V 590" />
+    <g class="plan__adresse">
+      <circle class="plan__point" cx="180" cy="590" r="8" />
+      <text class="plan__adresse-num" x="180" y="622" text-anchor="middle">{NUMERO}</text>
+    </g>
+    <text class="plan__avenue-nom" x="26" y="582" text-anchor="start">{AVENUE}</text>
+  </svg>
+
+  <p class="plan__bloc mono">
+    <span><b>{SITE.ville}</b> → {DESTINATION.nomCourt}</span>
+    <span>{fait('Surface')} · {fait('Espaces')}</span>
+    <span class="plan__bloc-src">{DESTINATION.adresse}</span>
+  </p>
+</figure>
+
+<style>
+  .plan { position: relative; margin: 0; }
+  .plan__svg { width: 100%; height: auto; overflow: visible; }
+  .plan__svg--v { display: none; }
+  @media (max-width: 48rem) {
+    .plan__svg--h { display: none; }
+    /* Un demi-écran de téléphone : les trois espaces et l'avenue d'un coup. */
+    .plan__svg--v { display: block; max-width: 16rem; margin-inline: auto; }
+  }
+
+  /* Les trois espaces se posent l'un après l'autre, de gauche à droite. */
+  .plan__espace {
+    opacity: 0;
+    animation: poser-espace 620ms var(--e-sortie) forwards;
+    animation-delay: calc(200ms + var(--rang) * 200ms);
+  }
+  @keyframes poser-espace {
+    from { opacity: 0; transform: translateY(0.9rem); }
+    to { opacity: 1; transform: none; }
+  }
+
+  .plan__mur {
+    fill: var(--signal-voile);
+    stroke: var(--encre);
+    stroke-width: 1.4;
+    vector-effect: non-scaling-stroke;
+  }
+  .plan__cage,
+  .plan__ring {
+    fill: none;
+    stroke: var(--signal-texte);
+    stroke-width: 2.5;
+    vector-effect: non-scaling-stroke;
+  }
+  .plan__rack {
+    fill: none;
+    stroke: var(--graphite);
+    stroke-width: 1.4;
+    vector-effect: non-scaling-stroke;
+  }
+  /* Les seize sacs se remplissent un par un : on compte avec le dessin. */
+  .plan__sac {
+    fill: var(--signal-texte);
+    opacity: 0;
+    animation: apparaitre 260ms var(--e-mecanique) forwards;
+    animation-delay: calc(900ms + var(--n) * 55ms);
+  }
+  @keyframes apparaitre { to { opacity: 1; } }
+
+  .plan__espace-nom {
+    font-family: var(--police-mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    fill: var(--encre);
+  }
+  .plan__espace-aire {
+    font-family: var(--police-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    fill: var(--signal-texte);
+  }
+
+  .plan__avenue {
+    stroke: var(--graphite);
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+    fill: none;
+    opacity: 0.5;
+  }
+  .plan__entree {
+    stroke: var(--signal-texte);
+    stroke-width: 2;
+    stroke-dasharray: 5 4;
+    vector-effect: non-scaling-stroke;
+    fill: none;
+  }
+  .plan__adresse {
+    opacity: 0;
+    animation: apparaitre 420ms var(--e-sortie) 1100ms forwards;
+  }
+  .plan__point {
+    fill: var(--signal-texte);
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: battre 2.6s var(--e-mecanique) 2.2s infinite;
+  }
+  @keyframes battre {
+    0%, 74%, 100% { transform: scale(1); opacity: 1; }
+    86% { transform: scale(1.7); opacity: 0.35; }
+  }
+  .plan__adresse-num {
+    font-family: var(--police-mono);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    fill: var(--encre);
+  }
+  .plan__avenue-nom,
+  .plan__arret-nom {
+    font-family: var(--police-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    fill: var(--graphite);
+  }
+  .plan__arret rect {
+    fill: var(--papier-vif);
+    stroke: var(--encre);
+    stroke-width: 1.2;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .plan__bloc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--e-2) var(--e-5);
+    margin-top: var(--e-5);
+    padding-top: var(--e-3);
+    border-top: 1px solid var(--trait);
+    text-transform: none;
+    letter-spacing: 0.05em;
+    color: var(--graphite);
+  }
+  .plan__bloc b { color: var(--encre); font-weight: 700; }
+  .plan__bloc-src { margin-left: auto; }
+  @media (max-width: 62rem) { .plan__bloc-src { margin-left: 0; } }
+
+  /* ── Sans script, et en mouvement réduit : le plan est déjà fini. ──── */
+  :global(.no-js) .plan__espace,
+  :global(.no-js) .plan__sac,
+  :global(.no-js) .plan__adresse { animation: none; opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .plan__espace,
+    .plan__sac,
+    .plan__adresse,
+    .plan__point { animation: none !important; opacity: 1; transform: none; }
+  }
+</style>

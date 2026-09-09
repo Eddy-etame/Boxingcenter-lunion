@@ -68,7 +68,7 @@ export const ROUTES: readonly Route[] = [
   {
     id: 'mma',
     chemin: '/mma/',
-    nav: 'Travail au sol',
+    nav: 'MMA',
     question: 'Où faire du MMA et du grappling quand on part de L’Union ?',
     titre: 'Club MMA et grappling près de L’Union | Boxing Center',
     description:

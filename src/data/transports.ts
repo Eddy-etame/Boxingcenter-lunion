@@ -184,3 +184,11 @@ export const DEPARTS: readonly Depart[] = [
 
 export const AVERTISSEMENT =
   'Les horaires changent d’une saison à l’autre. On te dit quelles lignes prendre ; pour l’heure exacte, ouvre la fiche Tisséo — le lien est juste à côté de chaque étape.';
+
+/** Les nombres en lettres, pour les décomptes qui viennent du registre. */
+export const NOMBRES = [
+  'zéro', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix',
+  'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf', 'vingt',
+  'vingt et un', 'vingt-deux', 'vingt-trois', 'vingt-quatre', 'vingt-cinq',
+] as const;
+export const enLettres = (n: number) => NOMBRES[n] ?? String(n);
