@@ -155,7 +155,7 @@ export const CONTENUS: readonly Contenu[] = [
   },
   {
     id: 'kick-boxing',
-    h1: 'Club de kick-boxing et de boxe thaï à proximité de L’Union',
+    h1: 'Boxe pieds-poings près de L’Union : kick-boxing, Muay Thai, full contact',
     chapeau:
       'Le club publie le pieds-poings « Kick » au planning de la salle Boxe, le Muay Thai sur sa page des disciplines, et le full contact, nouveau dans l’espace Boxe. Les trois se pratiquent avenue des États-Unis, sur deux rings de compétition.',
     photoHero: 'sac-de-frappe-lunion',
@@ -163,7 +163,7 @@ export const CONTENUS: readonly Contenu[] = [
     promesse: 'Ajouter les jambes, sans perdre la garde. Le travail debout le plus complet.',
     blocs: [
       {
-        titre: 'Les jambes en plus des poings',
+        titre: 'Club de kick-boxing près de L’Union : les jambes en plus des poings',
         texte:
           'Ajouter les jambes ne double pas la difficulté, ça la multiplie. La distance change, la garde doit descendre sans s’ouvrir, et l’appui devient un problème permanent puisqu’on frappe sur une jambe. C’est ce qui rend le pieds-poings si fatigant la première fois.',
       },
