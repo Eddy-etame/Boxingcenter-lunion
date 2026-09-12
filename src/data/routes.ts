@@ -118,7 +118,7 @@ export const ROUTES: readonly Route[] = [
     description:
       'Ce qu’il faut apporter, ce que tu vas faire et ce que tu ne feras pas : le déroulé d’un premier cours pour un débutant venu de L’Union.',
     menu: false,
-    index: true,
+    index: false,
   },
   {
     id: 'ta-seance',
@@ -129,7 +129,7 @@ export const ROUTES: readonly Route[] = [
     description:
       'Deux réponses et tu sais quel cours viser avenue des États-Unis, et à quel moment de la semaine y aller depuis L’Union.',
     menu: true,
-    index: true,
+    index: false,
   },
   {
     id: 'transports',
@@ -176,7 +176,7 @@ export const ROUTES: readonly Route[] = [
     description:
       'Une question avant de te déplacer depuis L’Union ? Écris-nous, on te répond avec le cours et le créneau qui correspondent. Téléphone : 09 39 03 67 48.',
     menu: true,
-    index: true,
+    index: false,
   },
   {
     id: 'merci',
@@ -206,7 +206,7 @@ export const ROUTES: readonly Route[] = [
     titre: 'Mentions légales | Boxing Center L’Union',
     description: 'Mentions légales du site boxingcenter-lunion.fr.',
     menu: false,
-    index: true,
+    index: false,
   },
   {
     id: 'confidentialite',
@@ -216,7 +216,7 @@ export const ROUTES: readonly Route[] = [
     titre: 'Politique de confidentialité | Boxing Center L’Union',
     description: 'Ce que devient une demande envoyée depuis boxingcenter-lunion.fr.',
     menu: false,
-    index: true,
+    index: false,
   },
 ] as const;
 
