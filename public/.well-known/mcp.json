@@ -4,7 +4,7 @@
   "description": "Boxing Center L’Union — plateforme d’orientation vers les clubs Boxing Center.",
   "protocol": "mcp",
   "transport": "streamable-http",
-  "endpoint": "https://www.boxingcenter-lunion.fr/api/mcp",
+  "endpoint": "https://www.boxingcenter-lunion.fr/api/mcp/",
   "documentation": "https://www.boxingcenter-lunion.fr/humans.txt",
   "tools": [
     {
