@@ -119,7 +119,7 @@ export const ROUTES: readonly Route[] = [
     description:
       'Ce qu’il faut apporter, ce que tu vas faire et ce que tu ne feras pas : le déroulé d’un premier cours pour un débutant venu de L’Union.',
     menu: false,
-    index: false,
+    index: true,
   },
   {
     id: 'ta-seance',
@@ -130,7 +130,7 @@ export const ROUTES: readonly Route[] = [
     description:
       'Deux réponses et tu sais quel cours viser avenue des États-Unis, et à quel moment de la semaine y aller depuis L’Union.',
     menu: true,
-    index: false,
+    index: true,
   },
   {
     id: 'transports',
@@ -178,7 +178,7 @@ export const ROUTES: readonly Route[] = [
       'Portet-sur-Garonne, Minimes, États-Unis, Saint-Cyprien et Ramonville : les cinq clubs Boxing Center autour de L’Union, leur adresse et le lien vers leur site.',
     menu: true,
     // hors index : mêmes adresses sur les sept sites de proximité ; liens suivis
-    index: false,
+    index: true,
   },
   {
     id: 'contact',
@@ -189,7 +189,7 @@ export const ROUTES: readonly Route[] = [
     description:
       'Une question avant de te déplacer depuis L’Union ? Écris-nous, on te répond avec le cours et le créneau qui correspondent. Téléphone : 09 39 03 67 48.',
     menu: true,
-    index: false,
+    index: true,
   },
   {
     id: 'merci',
@@ -219,7 +219,7 @@ export const ROUTES: readonly Route[] = [
     titre: 'Mentions légales | Boxing Center L’Union',
     description: 'Mentions légales du site boxingcenter-lunion.fr.',
     menu: false,
-    index: false,
+    index: true,
   },
   {
     id: 'confidentialite',
@@ -229,7 +229,7 @@ export const ROUTES: readonly Route[] = [
     titre: 'Politique de confidentialité | Boxing Center L’Union',
     description: 'Ce que devient une demande envoyée depuis boxingcenter-lunion.fr.',
     menu: false,
-    index: false,
+    index: true,
   },
 ] as const;
 
