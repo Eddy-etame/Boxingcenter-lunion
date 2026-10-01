@@ -24,6 +24,11 @@ export type RouteId =
   | 'saint-jean'
   | 'rouffiac-tolosan'
   | 'nos-clubs'
+  /* conseils:début */
+  | 'conseils'
+  | 'equipement-sparring-boxe'
+  | 'corde-a-sauter-boxe'
+  /* conseils:fin */
   | 'contact'
   | 'merci'
   | 'introuvable'
@@ -180,6 +185,41 @@ export const ROUTES: readonly Route[] = [
     // hors index : mêmes adresses sur les sept sites de proximité ; liens suivis
     index: true,
   },
+  /* conseils:routes */
+  {
+    id: 'conseils',
+    chemin: '/conseils/',
+    nav: 'Conseils matériel',
+    question: 'Que faut-il pour le sparring, et quelle corde à sauter choisir ?',
+    titre: 'Sparring, corde à sauter : conseils matériel | L’Union',
+    description:
+      'Équipement de sparring, choix de la corde à sauter : les conseils de Boxing Center pour les Unionais qui s’entraînent à Toulouse États-Unis.',
+    menu: false,
+    index: true,
+  },
+  {
+    id: 'equipement-sparring-boxe',
+    chemin: '/conseils/equipement-sparring-boxe/',
+    nav: 'Équipement de sparring',
+    question: 'Quel équipement pour faire du sparring en boxe ?',
+    titre: 'Sparring en boxe : l’équipement à avoir absolument',
+    description:
+      'Gants de 16 oz, casque, protège-dents, coquille : l’équipement de sparring en boxe anglaise, et le rôle de chaque pièce, avant de monter sur le ring.',
+    menu: false,
+    index: true,
+  },
+  {
+    id: 'corde-a-sauter-boxe',
+    chemin: '/conseils/corde-a-sauter-boxe/',
+    nav: 'Corde à sauter',
+    question: 'Quelle corde à sauter choisir pour la boxe ?',
+    titre: 'Corde à sauter de boxe : laquelle choisir ?',
+    description:
+      'Corde de vitesse, lestée ou en PVC : choisir sa corde à sauter pour la boxe, la régler à sa taille, et s’en servir par rounds de trois minutes.',
+    menu: false,
+    index: true,
+  },
+  /* conseils:routes:fin */
   {
     id: 'contact',
     chemin: '/contact/',
