@@ -65,7 +65,7 @@ export const CONSEILS: readonly Conseil[] = [
     photo: 'encadrement-boxe-lunion',
     sujet: 'Conseil · Sparring',
     publie: '2026-10-02',
-    maj: '2026-10-02',
+    maj: '2026-10-03',
     sections: [
       {
         sur: 'Le principe',
@@ -94,7 +94,7 @@ export const CONSEILS: readonly Conseil[] = [
         sur: 'Les deux discrètes',
         h2: 'Protège-dents et coquille : jamais sans.',
         paras: [
-          'Le <a class="lien" href="https://www.boutique-de-boxe.com/protege-dents/" rel="noopener">protège-dents</a> se moule chez toi, à l’avance. La <a class="lien" href="https://www.boutique-de-boxe.com/coquilles/" rel="noopener">coquille</a> se porte sous le short : un coup bas arrive sans intention, surtout entre débutants. Les femmes ont leurs protections pelviennes et leurs protège-poitrine.',
+          'Le <a class="lien" href="https://www.boutique-de-boxe.com/protege-dents/" rel="noopener">protège-dents</a> se moule chez toi, à l’avance. La <a class="lien" href="https://www.boutique-de-boxe.com/coquilles/" rel="noopener">coquille</a> se porte sous le short : un coup bas arrive sans intention, surtout entre débutants. Les femmes ont leurs protections pelviennes et leurs protège-poitrine. Gants de 16 oz, casque, coquille : Boutique de Boxe chiffre ce sac dans <a class="lien" href="https://www.boutique-de-boxe.com/materiel-boxe/" rel="noopener">son tableau du matériel de boxe, niveau par niveau</a>.',
         ],
       },
       {
