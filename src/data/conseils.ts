@@ -37,7 +37,7 @@ export const INDEX_CONSEILS = {
   photo: 'materiel-boxe-lunion',
   sujet: 'Conseils matériel · depuis',
   finH2: 'Rien ne remplace un cours d’essai.',
-  finTexte: 'À Toulouse États-Unis, tu commences en tenue de sport, et tu demandes au club ce qu’il met à disposition. Le reste s’achète en connaissance de cause.',
+  finTexte: 'À Toulouse États-Unis, tu commences en tenue de sport, et tu demandes au club ce qu’il met à disposition. Le reste s’achète en connaissance de cause. Et pour comparer les clubs de la ville avant de choisir, <a class="lien" href="https://www.boutique-de-boxe.com/boutique-de-boxe-toulouse/" rel="noopener">Boutique de boxe Toulouse</a> les liste, disciplines et adresses comprises.',
 } as const;
 
 export const LIBELLES = {
