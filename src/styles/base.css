@@ -229,6 +229,22 @@ textarea {
 .reveler.vu,
 .bloc-scene.vu { will-change: auto; }
 
+/* Le geste d'entrée n'élargit jamais la page. Sur L'Union il vient de la
+   droite (--mouv-x positif) : tant qu'un bloc attend sous le pli, il dépasse
+   du bord de l'écran de 22 px, et un téléphone dézoome toute la page pour le
+   montrer (mesuré le 8/11/2026 : document de 453 px pour un écran de 430,
+   sur 17 des 18 pages ; le réarmement par le bas le refait en remontant).
+   `clip` coupe sans créer de conteneur de défilement : la barre et le
+   sommaire restent `sticky`, et `main` n'ayant ni filtre ni transformation,
+   aucun calque `fixed` n'est rogné (BLUEPRINT-FAMILLE § 13, règle 6). */
+main#contenu { overflow-x: clip; }
+/* Sans `overflow: clip` (Safari avant 16) : l'entrée garde sa montée et perd
+   son décalage latéral, plutôt que d'élargir la page. */
+@supports not (overflow-x: clip) {
+  .reveler,
+  .bloc-scene { --mouv-x: 0rem; }
+}
+
 /* ── Lien d'évitement ─────────────────────────────────────────────────── */
 .saut {
   position: absolute;
